@@ -1,0 +1,11 @@
+@mixin maskImg($element, $color: '', $size: auto 100%, $position: center, $repeat: no-repeat) {
+   -webkit-mask-image: url("#{$element}");
+   mask-image: url("#{$element}");
+   -webkit-mask-size: $size;
+   mask-size: $size;
+   -webkit-mask-position: $position;
+   mask-position: $position;
+   -webkit-mask-repeat: $repeat;
+   mask-repeat: $repeat;
+   background-color: $color;
+}

@@ -1,0 +1,300 @@
+// ===================== header =============
+.header {
+   padding: calc(var(--padding)*1.7) 0 calc(var(--padding)*4) 0;
+   background-color: var(--main-color);
+
+   @media(min-width: 992px) {
+      padding: calc(var(--padding)*3.5) 0 calc(var(--padding)*8) 0;
+   }
+
+   .navigation {
+      display: flex;
+      align-items: center;
+
+      div:first-child {
+         color: var(--white-color);
+         font-size: 1.875rem;
+         line-height: 1.27;
+         font-weight: 500;
+         align-items: center;
+         display: flex;
+
+         @media(min-width: 992px) {
+            font-size: 2.5rem;
+         }
+
+         &::before {
+            content: '';
+            display: inline-block;
+            width: 45px;
+            height: 30px;
+            margin: 0 var(--margin) 0 0;
+            @include maskImg('../../image/img_header/start.svg', var(--white-color));
+
+            @media(min-width: 992px) {
+               width: 70px;
+               height: 50px;
+               margin: 0 calc(var(--margin)*1.8) 0 0;
+            }
+         }
+      }
+
+      ul {
+         margin: 0 0 0 auto;
+         display: flex;
+
+         @media(max-width: 991px) {
+            display: none;
+         }
+
+         li {
+            &:not(:last-child) {
+               margin: 0 calc(var(--margin)*3) 0 0;
+            }
+
+            a {
+               color: var(--white-color);
+               font-size: 1.25rem;
+               line-height: 1.25;
+            }
+         }
+      }
+
+      div:last-child {
+         margin: 0 0 0 auto;
+
+         @media(min-width: 992px) {
+            display: none;
+         }
+
+         &::before {
+            content: '';
+            display: block;
+            width: 45px;
+            height: 30px;
+            @include maskImg('../../image/img_header/burger.svg', var(--white-color));
+            width: 35px;
+            height: 35px;
+         }
+      }
+   }
+}
+// ======================== section-hero ==========================
+.section-hero {
+   margin: calc(var(--margin)*3) 0 0 0;
+
+   @media(min-width: 992px) {
+      margin: calc(var(--margin)*4) 0 0 0;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+
+      @media(min-width: 992px) {
+         flex-direction: row-reverse;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+
+   div {
+      h2 {
+         color: var(--white-color);
+      }
+
+      h3 {
+         font-size: 1.75rem;
+      }
+
+      p {
+         color: rgba(255, 255, 255, 0.75);
+      }
+
+      button {
+         background-color: var(--secondary-color);
+         color: var(--black-color);
+      }
+   }
+}
+
+.description-box {
+   margin: calc(var(--margin)*3) auto 0;
+   max-width: 335px;
+
+   @media(min-width: 992px) {
+      margin: 0 calc(var(--margin)*12) 0 0;
+      max-width: 480px;
+   }
+}
+
+// =======================  section-partners  =======================
+.section-partners {
+   padding: calc(var(--padding)*2) 0 calc(var(--padding)*6) 0;
+   text-align: center;
+
+   @media(min-width: 992px) {
+      padding: calc(var(--padding)*6) 0 calc(var(--padding)*7) 0;
+   }
+
+   p {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      color: var(--black-color);
+   }
+
+   h3 {
+      color: var(--black-color);
+   }
+
+   .box-partners {
+      margin: 0 auto;
+
+      @media(min-width: 992px) {
+         max-width: 505px;
+      }
+   }
+}
+// ============================  section ========================
+.teams {
+   margin-top: 0;
+
+   .container {
+      @media(min-width: 992px) {
+         flex-direction: row;
+      }
+   }
+
+   .description-box {
+      @media(min-width: 992px) {
+         margin: 0 0 0 calc(var(--margin)*12);
+      }
+
+      h3 {
+         color: var(--color-title);
+      }
+
+      p {
+         color: var(--about-description);
+      }
+
+      button {
+         background-color: var(--color-title);
+         color: var(--white-color);
+      }
+   }
+}
+
+//  ======================== section man ========================
+.man {
+   padding: calc(var(--padding)*6) 0 calc(var(--padding)*4) 0;
+
+   @media(min-width: 992px) {
+      padding: calc(var(--padding)*7) 0 calc(var(--padding)*10) 0;
+   }
+
+   .container {
+      @media(min-width: 992px) {
+         flex-direction: row-reverse;
+      }
+   }
+
+   .description-box {
+      margin: calc(var(--margin)*3) auto 0;
+
+      @media(min-width: 992px) {
+         margin: 0 calc(var(--margin)*12) 0 0;
+      }
+   }
+}
+// ======================= section best-team =================
+.best-team {
+   text-align: center;
+   padding-bottom: calc(var(--padding)*4);
+   @media(min-width: 992px){
+         padding-bottom: calc(var(--padding)*5.5);
+   }
+
+   .container {
+      .box-partners {
+         h3 {
+            color: var(--color-title);
+         }
+
+         p {
+            margin-bottom: calc(var(--margin)*4.2);
+         }
+      }
+
+      button {
+         margin: calc(var(--margin)*4.5) 0 0 0;
+      }
+   }
+}
+// ======================== footer ================
+.footer {
+   padding: calc(var(--padding)*3) 0;
+   background-color: var(--main-color);
+
+   @media(min-width: 992px) {
+      padding: calc(var(--padding)*5) 0;
+   }
+
+   .social-icons {
+     display: flex;
+      li {
+         &::before {
+            content: '';
+            display: inline-block;
+         }
+         &:not(:last-child){
+            margin: 0 calc(var(--padding)*2) 0 0;
+         }
+      }
+
+         li:nth-child(1)::before {
+            @include maskImg('../../image/img_footer/facebook.svg', var(--white-color));
+            width: 10px;
+            height: 18px;
+         }
+
+         li:nth-child(2)::before {
+            @include maskImg('../../image/img_footer/instagram.svg', var(--white-color));
+            width: 18px;
+            height: 18px;
+         }
+
+                  li:nth-child(3)::before {
+            @include maskImg('../../image/img_footer/twitter.svg', var(--white-color));
+            width: 22px;
+               height: 18px;
+         }
+
+                  li:nth-child(4)::before {
+            @include maskImg('../../image/img_footer/p.svg', var(--white-color));
+            width: 14px;
+               height: 18px;
+         }
+
+                  li:nth-child(5)::before {
+            @include maskImg('../../image/img_footer/tik-tok.svg', var(--white-color));
+            width: 15.5px;
+               height: 18px;
+         }
+
+                  li:nth-child(6)::before {
+            @include maskImg('../../image/img_footer/whatsapp.svg', var(--white-color));
+            width: 18px;
+               height: 18px;
+         }
+
+                  li:nth-child(7)::before {
+            @include maskImg('../../image/img_footer/you-tobe.svg', var(--white-color));
+               width: 26px;
+                  height: 18px;
+         }
+      
+   }
+}
+
+

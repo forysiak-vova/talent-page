@@ -1,0 +1,24 @@
+:root {
+
+--main-color-rgb: 116, 198, 157;
+--main-color: rgb(var(--main-color-rgb));
+
+--secondary-color-rgb: 245, 245, 245;
+--secondary-color: rgb(var(--secondary-color-rgb));
+
+--white-color-rgb: 255, 255, 255;
+--white-color: rgb(var(--white-color-rgb));
+
+--black-color-rgb: 0, 0, 0; 
+--black-color: rgb(var(--black-color-rgb));
+
+--about-description-rgba: 33, 37, 41, 0.5;
+--about-description: rgba(var(--about-description-rgba));
+
+--color-title-rgba: 33, 37, 41;
+--color-title: rgba(var(--color-title-rgba));
+
+--padding: 10px;
+--margin: 10px;
+--border-radius: 8px;
+}

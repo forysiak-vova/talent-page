@@ -1,0 +1,44 @@
+.box-card-team {
+   flex-wrap: wrap;
+   margin: calc(var(--margin)*2.2) 0 0 0;
+
+   @media(min-width: 992px) {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .card-team {
+      padding: calc(var(--margin)*2) calc(var(--margin)*4);
+      box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+      border-radius: calc(var(--border-radius)*0.625);
+      max-width: 280px;
+
+      @media(max-width: 991px) {
+         margin: 0 auto;
+         &:not(:last-child) {
+            margin-bottom: calc(var(--margin)*3.5) ;
+         }
+      }
+
+      >div:first-child {
+         max-width: 175px;
+         margin: 0 auto;
+      }
+
+      >div:last-child {
+         text-align: left;
+
+         p {
+            margin: 0;
+            color: var(--about-description);
+         }
+
+         h4 {
+            margin: calc(var(--margin)*2) 0;
+            font-size: 1.45rem;
+            line-height: 1.25;
+            font-family: 'Crimson Text', serif;
+         }
+      }
+   }
+}
