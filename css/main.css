@@ -185,13 +185,18 @@ a {
 }
 
 .box-card-team {
-  flex-wrap: wrap;
+  display: flex;
   margin: calc(var(--margin) * 2.2) 0 0 0;
+}
+@media (max-width: 991px) {
+  .box-card-team {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (min-width: 992px) {
   .box-card-team {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .box-card-team .card-team {
@@ -505,101 +510,49 @@ a {
     justify-content: center;
   }
 }
-.footer .social-icons li::before {
-  content: "";
-  display: inline-block;
-}
 .footer .social-icons li:not(:last-child) {
   margin: 0 calc(var(--padding) * 2) 0 0;
 }
-.footer .social-icons li:nth-child(1)::before {
-  -webkit-mask-image: url("../../image/img_footer/facebook.svg");
-  mask-image: url("../../image/img_footer/facebook.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons li a {
+  cursor: pointer;
+}
+.footer .social-icons li a::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.footer .social-icons .facebook::before {
+  background-image: url("../../image/img_footer/facebook.svg");
   width: 10px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(2)::before {
-  -webkit-mask-image: url("../../image/img_footer/instagram.svg");
-  mask-image: url("../../image/img_footer/instagram.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .instagram::before {
+  background-image: url("../../image/img_footer/instagram.svg");
   width: 18px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(3)::before {
-  -webkit-mask-image: url("../../image/img_footer/twitter.svg");
-  mask-image: url("../../image/img_footer/twitter.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .twitter::before {
+  background-image: url("../../image/img_footer/twitter.svg");
   width: 22px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(4)::before {
-  -webkit-mask-image: url("../../image/img_footer/p.svg");
-  mask-image: url("../../image/img_footer/p.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .p::before {
+  background-image: url("../../image/img_footer/p.svg");
   width: 14px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(5)::before {
-  -webkit-mask-image: url("../../image/img_footer/tik-tok.svg");
-  mask-image: url("../../image/img_footer/tik-tok.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .tik-tok::before {
+  background-image: url("../../image/img_footer/tik-tok.svg");
   width: 15.5px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(6)::before {
-  -webkit-mask-image: url("../../image/img_footer/whatsapp.svg");
-  mask-image: url("../../image/img_footer/whatsapp.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .whatsapp::before {
+  background-image: url("../../image/img_footer/whatsapp.svg");
   width: 18px;
   height: 18px;
 }
-.footer .social-icons li:nth-child(7)::before {
-  -webkit-mask-image: url("../../image/img_footer/you-tobe.svg");
-  mask-image: url("../../image/img_footer/you-tobe.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
+.footer .social-icons .you-tobe::before {
+  background-image: url("../../image/img_footer/you-tobe.svg");
   width: 26px;
   height: 18px;
 }/*# sourceMappingURL=main.css.map */

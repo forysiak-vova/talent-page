@@ -30,54 +30,69 @@
       justify-content: center;
       }
       li {
-         &::before {
-            content: '';
-            display: inline-block;
-         }
+         // &::before {
+         //    content: '';
+         //    display: inline-block;
+         // }
 
          &:not(:last-child) {
             margin: 0 calc(var(--padding)*2) 0 0;
          }
+         a{
+            cursor: pointer;
+         &::before {
+               content: '';
+               display: inline-block;
+               background-repeat: no-repeat;
+            }
+         }
       }
 
-      li:nth-child(1)::before {
-         @include maskImg('../../image/img_footer/facebook.svg', var(--white-color));
+        .facebook::before {
+         // @include maskImg('../../image/img_footer/facebook.svg', var(--white-color));
+         background-image: url('../../image/img_footer/facebook.svg');
          width: 10px;
          height: 18px;
       }
 
-      li:nth-child(2)::before {
-         @include maskImg('../../image/img_footer/instagram.svg', var(--white-color));
+        .instagram::before {
+         // @include maskImg('../../image/img_footer/instagram.svg', var(--white-color));
+         background-image: url('../../image/img_footer/instagram.svg');
          width: 18px;
          height: 18px;
       }
 
-      li:nth-child(3)::before {
-         @include maskImg('../../image/img_footer/twitter.svg', var(--white-color));
+        .twitter::before {
+         // @include maskImg('../../image/img_footer/twitter.svg', var(--white-color));
+         background-image: url('../../image/img_footer/twitter.svg');
          width: 22px;
          height: 18px;
       }
 
-      li:nth-child(4)::before {
-         @include maskImg('../../image/img_footer/p.svg', var(--white-color));
+     .p::before {
+         // @include maskImg('../../image/img_footer/p.svg', var(--white-color));
+         background-image: url('../../image/img_footer/p.svg');
          width: 14px;
          height: 18px;
       }
 
-      li:nth-child(5)::before {
-         @include maskImg('../../image/img_footer/tik-tok.svg', var(--white-color));
+      .tik-tok::before {
+         // @include maskImg('../../image/img_footer/tik-tok.svg', var(--white-color));
+         background-image: url('../../image/img_footer/tik-tok.svg');
          width: 15.5px;
          height: 18px;
       }
 
-      li:nth-child(6)::before {
-         @include maskImg('../../image/img_footer/whatsapp.svg', var(--white-color));
+      .whatsapp::before {
+         // @include maskImg('../../image/img_footer/whatsapp.svg', var(--white-color));
+         background-image: url('../../image/img_footer/whatsapp.svg');
          width: 18px;
          height: 18px;
       }
 
-      li:nth-child(7)::before {
-         @include maskImg('../../image/img_footer/you-tobe.svg', var(--white-color));
+      .you-tobe::before {
+         // @include maskImg('../../image/img_footer/you-tobe.svg', var(--white-color));
+         background-image: url('../../image/img_footer/you-tobe.svg');
          width: 26px;
          height: 18px;
       }

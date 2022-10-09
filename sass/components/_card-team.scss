@@ -1,10 +1,13 @@
 .box-card-team {
-   flex-wrap: wrap;
+   display: flex;
    margin: calc(var(--margin)*2.2) 0 0 0;
+   @media(max-width: 991px){
+   flex-wrap: wrap;
+   justify-content: center;
+   }
 
    @media(min-width: 992px) {
-      display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
    }
 
    .card-team {
