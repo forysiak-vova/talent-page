@@ -128,7 +128,7 @@ a {
   margin: 0;
   padding: 0;
   background-image: none;
-  background-color: var(--black-color);
+  background-color: var(--color-title);
   color: var(--white-color);
   user-select: none;
   text-overflow: clip;
