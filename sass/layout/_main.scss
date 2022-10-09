@@ -16,17 +16,17 @@
    h3 {
       color: var(--black-color);
    }
-
-   .box-partners {
-      margin: 0 auto;
-
-      @media(min-width: 992px) {
-         max-width: 505px;
-      }
-   }
+   
    button{
       margin: calc(var(--margin)*5.5) 0 0 0;
       background-color: var(--color-title);
+   }
+}
+.box-partners {
+   margin: 0 auto;
+
+   @media(min-width: 992px) {
+      max-width: 505px;
    }
 }
 // ============================  section ========================
@@ -97,6 +97,8 @@
 
          p {
             margin-bottom: 0;
+            font-size: 1.25rem;
+            line-height: 1.25;
          }
       }
 

@@ -371,17 +371,18 @@ a {
 .section-partners h3 {
   color: var(--black-color);
 }
-.section-partners .box-partners {
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  .section-partners .box-partners {
-    max-width: 505px;
-  }
-}
 .section-partners button {
   margin: calc(var(--margin) * 5.5) 0 0 0;
   background-color: var(--color-title);
+}
+
+.box-partners {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .box-partners {
+    max-width: 505px;
+  }
 }
 
 .teams {
@@ -444,6 +445,8 @@ a {
 }
 .best-team .container .box-partners p {
   margin-bottom: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
 }
 .best-team .container button {
   margin: calc(var(--margin) * 2) 0 0 0;
