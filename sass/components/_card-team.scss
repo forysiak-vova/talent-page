@@ -12,6 +12,7 @@
       box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
       border-radius: calc(var(--border-radius)*0.625);
       max-width: 280px;
+      min-width: 280px;
 
       @media(max-width: 991px) {
          margin: 0 auto;
@@ -40,5 +41,12 @@
             font-family: 'Crimson Text', serif;
          }
       }
+   }
+}
+
+.card-padding{
+   padding: calc(var(--padding)*1.7);
+   @media(min-width: 992pc){
+      padding: calc(var(--padding)*2.5);
    }
 }

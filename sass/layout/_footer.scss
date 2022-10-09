@@ -1,0 +1,86 @@
+.footer {
+   padding: calc(var(--padding)*3) 0;
+   background-color: var(--main-color);
+
+   @media(min-width: 992px) {
+      padding: calc(var(--padding)*5) 0;
+   }
+
+   .container {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: 991px){
+         display: block;
+         margin: 0 auto;
+      }
+
+      div:last-child {
+         color: var(--white-color);
+         text-align: center;
+      }
+   }
+
+   .social-icons {
+      display: flex;
+      margin: calc(var(--margin)*0.3) 0 0 0;
+      font-size: 1.25rem;
+      line-height: 1.25;
+      @media(max-width: 991px){
+      margin: calc(var(--margin)*0.3) 0 calc(var(--margin)*2) 0;
+      justify-content: center;
+      }
+      li {
+         &::before {
+            content: '';
+            display: inline-block;
+         }
+
+         &:not(:last-child) {
+            margin: 0 calc(var(--padding)*2) 0 0;
+         }
+      }
+
+      li:nth-child(1)::before {
+         @include maskImg('../../image/img_footer/facebook.svg', var(--white-color));
+         width: 10px;
+         height: 18px;
+      }
+
+      li:nth-child(2)::before {
+         @include maskImg('../../image/img_footer/instagram.svg', var(--white-color));
+         width: 18px;
+         height: 18px;
+      }
+
+      li:nth-child(3)::before {
+         @include maskImg('../../image/img_footer/twitter.svg', var(--white-color));
+         width: 22px;
+         height: 18px;
+      }
+
+      li:nth-child(4)::before {
+         @include maskImg('../../image/img_footer/p.svg', var(--white-color));
+         width: 14px;
+         height: 18px;
+      }
+
+      li:nth-child(5)::before {
+         @include maskImg('../../image/img_footer/tik-tok.svg', var(--white-color));
+         width: 15.5px;
+         height: 18px;
+      }
+
+      li:nth-child(6)::before {
+         @include maskImg('../../image/img_footer/whatsapp.svg', var(--white-color));
+         width: 18px;
+         height: 18px;
+      }
+
+      li:nth-child(7)::before {
+         @include maskImg('../../image/img_footer/you-tobe.svg', var(--white-color));
+         width: 26px;
+         height: 18px;
+      }
+
+   }
+}
