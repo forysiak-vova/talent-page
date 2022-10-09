@@ -110,6 +110,10 @@ a {
   width: 100%;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .btn {
   display: inline-block;
   outline: none;
@@ -187,16 +191,12 @@ a {
 .box-card-team {
   display: flex;
   margin: calc(var(--margin) * 2.2) 0 0 0;
+  flex-wrap: wrap;
 }
-@media (max-width: 991px) {
+@media (max-width: 1215px) {
   .box-card-team {
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media (min-width: 992px) {
-  .box-card-team {
-    justify-content: space-between;
   }
 }
 .box-card-team .card-team {
@@ -205,6 +205,13 @@ a {
   border-radius: calc(var(--border-radius) * 0.625);
   max-width: 280px;
   min-width: 280px;
+}
+@media (min-width: 1215px) {
+  .box-card-team .card-team {
+    max-width: 248px;
+    min-width: 248px;
+    padding: calc(var(--margin) * 2);
+  }
 }
 @media (max-width: 991px) {
   .box-card-team .card-team {
@@ -235,9 +242,9 @@ a {
 .card-padding {
   padding: calc(var(--padding) * 1.7);
 }
-@media (min-width: 992pc) {
+@media (min-width: 992px) {
   .card-padding {
-    padding: calc(var(--padding) * 2.5);
+    padding: calc(var(--padding) * 2.25);
   }
 }
 
@@ -267,24 +274,13 @@ a {
     font-size: 2.5rem;
   }
 }
-.header .navigation div:first-child::before {
-  content: "";
-  display: inline-block;
+.header .navigation div:first-child .img-star {
   width: 45px;
   height: 30px;
   margin: 0 var(--margin) 0 0;
-  -webkit-mask-image: url("../../image/img_header/start.svg");
-  mask-image: url("../../image/img_header/start.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
 }
 @media (min-width: 992px) {
-  .header .navigation div:first-child::before {
+  .header .navigation div:first-child .img-star {
     width: 70px;
     height: 50px;
     margin: 0 calc(var(--margin) * 1.8) 0 0;
@@ -315,23 +311,6 @@ a {
   .header .navigation div:last-child {
     display: none;
   }
-}
-.header .navigation div:last-child::before {
-  content: "";
-  display: block;
-  width: 45px;
-  height: 30px;
-  -webkit-mask-image: url("../../image/img_header/burger.svg");
-  mask-image: url("../../image/img_header/burger.svg");
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: var(--white-color);
-  width: 35px;
-  height: 35px;
 }
 
 .section-hero {
@@ -467,7 +446,7 @@ a {
   margin-bottom: 0;
 }
 .best-team .container button {
-  margin: calc(var(--margin) * 2.8) 0 0 0;
+  margin: calc(var(--margin) * 2) 0 0 0;
 }
 @media (min-width: 992px) {
   .best-team .container button {
@@ -511,6 +490,8 @@ a {
   }
 }
 .footer .social-icons li {
+  display: flex;
+  justify-content: center;
   width: 20px;
 }
 .footer .social-icons li:not(:last-child) {
@@ -518,9 +499,4 @@ a {
 }
 .footer .social-icons li a {
   cursor: pointer;
-}
-.footer .social-icons li a::before {
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

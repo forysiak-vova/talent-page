@@ -1,14 +1,15 @@
 .box-card-team {
    display: flex;
    margin: calc(var(--margin)*2.2) 0 0 0;
-   @media(max-width: 991px){
+   flex-wrap: wrap;
+   @media(max-width: 1215px){
    flex-wrap: wrap;
    justify-content: center;
    }
 
-   @media(min-width: 992px) {
-      justify-content: space-between;
-   }
+   // @media(min-width: 992px) {
+   //       justify-content: center;
+   // }
 
    .card-team {
       padding: calc(var(--margin)*2) calc(var(--margin)*4);
@@ -16,6 +17,11 @@
       border-radius: calc(var(--border-radius)*0.625);
       max-width: 280px;
       min-width: 280px;
+      @media(min-width: 1215px){
+         max-width: 248px;
+         min-width: 248px;
+         padding: calc(var(--margin)*2);
+      }
 
       @media(max-width: 991px) {
          margin: 0 auto;
@@ -49,7 +55,7 @@
 
 .card-padding{
    padding: calc(var(--padding)*1.7);
-   @media(min-width: 992pc){
-      padding: calc(var(--padding)*2.5);
+   @media(min-width: 992px){
+      padding: calc(var(--padding)*2.25);
    }
 }

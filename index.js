@@ -21,9 +21,9 @@ document.querySelector(".burger").addEventListener("click", () => {
   modal.className = "modal";
   modal.innerHTML = htmlString;
   document.body.append(modal);
-  document.body.classList.add(".visually-hidden");
+  document.body.classList.add("overflow-hidden");
   document.querySelector(".close-icon").addEventListener("click", (e) => {
     modal.remove();
-    document.body.classList.remove(".visually-hidden");
+    document.body.classList.remove("overflow-hidden");
   });
 });
