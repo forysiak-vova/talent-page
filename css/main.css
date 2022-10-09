@@ -510,6 +510,9 @@ a {
     justify-content: center;
   }
 }
+.footer .social-icons li {
+  width: 20px;
+}
 .footer .social-icons li:not(:last-child) {
   margin: 0 calc(var(--padding) * 2) 0 0;
 }
@@ -520,39 +523,4 @@ a {
   content: "";
   display: inline-block;
   background-repeat: no-repeat;
-}
-.footer .social-icons .facebook::before {
-  background-image: url("../../image/img_footer/facebook.svg");
-  width: 10px;
-  height: 18px;
-}
-.footer .social-icons .instagram::before {
-  background-image: url("../../image/img_footer/instagram.svg");
-  width: 18px;
-  height: 18px;
-}
-.footer .social-icons .twitter::before {
-  background-image: url("../../image/img_footer/twitter.svg");
-  width: 22px;
-  height: 18px;
-}
-.footer .social-icons .p::before {
-  background-image: url("../../image/img_footer/p.svg");
-  width: 14px;
-  height: 18px;
-}
-.footer .social-icons .tik-tok::before {
-  background-image: url("../../image/img_footer/tik-tok.svg");
-  width: 15.5px;
-  height: 18px;
-}
-.footer .social-icons .whatsapp::before {
-  background-image: url("../../image/img_footer/whatsapp.svg");
-  width: 18px;
-  height: 18px;
-}
-.footer .social-icons .you-tobe::before {
-  background-image: url("../../image/img_footer/you-tobe.svg");
-  width: 26px;
-  height: 18px;
 }/*# sourceMappingURL=main.css.map */

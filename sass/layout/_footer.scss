@@ -34,7 +34,7 @@
          //    content: '';
          //    display: inline-block;
          // }
-
+        width: 20px;
          &:not(:last-child) {
             margin: 0 calc(var(--padding)*2) 0 0;
          }
@@ -50,51 +50,51 @@
 
         .facebook::before {
          // @include maskImg('../../image/img_footer/facebook.svg', var(--white-color));
-         background-image: url('../../image/img_footer/facebook.svg');
-         width: 10px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/facebook.svg');
+         // width: 10px;
+         // height: 18px;
       }
 
         .instagram::before {
          // @include maskImg('../../image/img_footer/instagram.svg', var(--white-color));
-         background-image: url('../../image/img_footer/instagram.svg');
-         width: 18px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/instagram.svg');
+         // width: 18px;
+         // height: 18px;
       }
 
         .twitter::before {
          // @include maskImg('../../image/img_footer/twitter.svg', var(--white-color));
-         background-image: url('../../image/img_footer/twitter.svg');
-         width: 22px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/twitter.svg');
+         // width: 22px;
+         // height: 18px;
       }
 
      .p::before {
          // @include maskImg('../../image/img_footer/p.svg', var(--white-color));
-         background-image: url('../../image/img_footer/p.svg');
-         width: 14px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/p.svg');
+         // width: 14px;
+         // height: 18px;
       }
 
       .tik-tok::before {
          // @include maskImg('../../image/img_footer/tik-tok.svg', var(--white-color));
-         background-image: url('../../image/img_footer/tik-tok.svg');
-         width: 15.5px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/tik-tok.svg');
+         // width: 15.5px;
+         // height: 18px;
       }
 
       .whatsapp::before {
          // @include maskImg('../../image/img_footer/whatsapp.svg', var(--white-color));
-         background-image: url('../../image/img_footer/whatsapp.svg');
-         width: 18px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/whatsapp.svg');
+         // width: 18px;
+         // height: 18px;
       }
 
       .you-tobe::before {
          // @include maskImg('../../image/img_footer/you-tobe.svg', var(--white-color));
-         background-image: url('../../image/img_footer/you-tobe.svg');
-         width: 26px;
-         height: 18px;
+         // background-image: url('../../image/img_footer/you-tobe.svg');
+         // width: 26px;
+         // height: 18px;
       }
 
    }
