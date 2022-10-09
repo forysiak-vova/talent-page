@@ -24,6 +24,10 @@
          max-width: 505px;
       }
    }
+   button{
+      margin: calc(var(--margin)*5.5) 0 0 0;
+      background-color: var(--color-title);
+   }
 }
 // ============================  section ========================
 .teams {

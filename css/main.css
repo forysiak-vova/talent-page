@@ -379,6 +379,10 @@ a {
     max-width: 505px;
   }
 }
+.section-partners button {
+  margin: calc(var(--margin) * 5.5) 0 0 0;
+  background-color: var(--color-title);
+}
 
 .teams {
   margin-top: 0;
