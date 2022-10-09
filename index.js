@@ -1,6 +1,7 @@
 document.querySelector(".burger").addEventListener("click", () => {
   const htmlString = `
-   <span class="close-icon"></span>
+   <span class="close-icon">
+     <img src="./image/img_header/close_btn.svg" alt="close_btn"></span>
    <ul>
       <li>
          <a href="#" title="Home">Home</a>
