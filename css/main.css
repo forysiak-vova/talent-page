@@ -179,8 +179,6 @@ a {
 
 .close-icon {
   display: block;
-  width: 25px;
-  height: 24px;
   position: absolute;
   top: 26px;
   right: 22px;
@@ -340,7 +338,7 @@ a {
   color: rgba(255, 255, 255, 0.75);
 }
 .section-hero div button {
-  background-color: var(--secondary-color);
+  background-color: var(--white-color);
   color: var(--black-color);
 }
 
@@ -490,7 +488,6 @@ a {
 .footer .social-icons li {
   display: flex;
   justify-content: center;
-  width: 20px;
 }
 .footer .social-icons li:not(:last-child) {
   margin: 0 calc(var(--padding) * 2) 0 0;
